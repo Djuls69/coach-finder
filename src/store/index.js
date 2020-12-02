@@ -1,8 +1,13 @@
-import { createStore } from "vuex";
+import { createStore } from 'vuex'
+import coachesModule from './modules/coaches'
 
-export default createStore({
+const store = createStore({
   state: {},
   mutations: {},
   actions: {},
-  modules: {}
-});
+  modules: {
+    coaches: coachesModule
+  }
+})
+
+export default store
