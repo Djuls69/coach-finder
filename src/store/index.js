@@ -2,11 +2,18 @@ import { createStore } from 'vuex'
 import coachesModule from './modules/coaches'
 
 const store = createStore({
-  state: {},
-  mutations: {},
-  actions: {},
   modules: {
     coaches: coachesModule
+  },
+  state() {
+    return {
+      userId: 'c3'
+    }
+  },
+  getters: {
+    userId(state) {
+      return state.userId
+    }
   }
 })
 
