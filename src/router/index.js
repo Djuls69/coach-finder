@@ -21,7 +21,7 @@ const routes = [
     component: CoachDetails,
     children: [
       {
-        path: '/contact',
+        path: 'contact',
         component: ContactCoach
       }
     ]
